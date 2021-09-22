@@ -1,7 +1,4 @@
 .TextButton {
-  margin-top: 6%;
-  margin-left: 2%;
-
   height: 32px;
   display: flex;
   flex-direction: row;
@@ -10,8 +7,6 @@
   border-style: none;
 }
 .TextButton:hover {
-  margin-top: 6%;
-  margin-left: 2%;
   text-decoration-line: underline;
   height: 32px;
   display: flex;
@@ -33,4 +28,8 @@
   flex: none;
   padding-top: 0.5%;
   padding-left: 2%;
+}
+.link {
+  margin-top: 6%;
+  margin-left: 2%;
 }

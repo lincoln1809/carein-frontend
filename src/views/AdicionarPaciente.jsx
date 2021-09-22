@@ -47,7 +47,10 @@ export default function NovoPaciente() {
               <Input label="CPF" type="text"></Input>
             </Row>
             <Row>
-              <TextButton textButtonName="Cancelar e retornar ao menu" />
+              <TextButton
+                link="/menu"
+                textButtonName="Cancelar e retornar ao menu"
+              />
               <Button buttonName="Concluir Cadastro" />
             </Row>
           </Column>
