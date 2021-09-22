@@ -9,17 +9,13 @@ import Row from "../components/Row/Row";
 // import Button from "../components/Button/Button";
 import BigButton from "../components/BigButton/BigButton";
 
-// import {
-//   Link
-// } from 'react-router-dom';
-
 export default function Login() {
   return (
     <div>
       <HeadIcon />
       <Card titulo="Menu" onclick>
         <Row width="50%">
-          <BigButton titulo="Adicionar Paciente">
+          <BigButton link="adicionarPaciente" titulo="Adicionar Paciente">
             <svg
               class="rectangle"
               width="120px"
