@@ -1,17 +1,17 @@
 .Card {
-  position: fixed;
+  position: relative;
   left: 50%;
   transform: translate(-50%);
   background-color: #edfafd;
   border: 2px solid;
   border-color: #00b4d8;
   border-radius: 20px;
-  overflow: hidden;
-  margin-top: 100px;
+  margin-top: 10px;
   display: center;
   flex-direction: column;
   width: 68%;
   box-shadow: 0px 10px 20px rgba(92, 113, 124, 0.2);
+  margin-bottom: 70px;
 }
 .Title {
   font-family: Nunito;

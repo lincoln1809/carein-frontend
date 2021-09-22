@@ -1,0 +1,36 @@
+.TextButton {
+  margin-top: 6%;
+  margin-left: 2%;
+
+  height: 32px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  background: transparent;
+  border-style: none;
+}
+.TextButton:hover {
+  margin-top: 6%;
+  margin-left: 2%;
+  text-decoration-line: underline;
+  height: 32px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  background: transparent;
+  border-style: none;
+}
+
+.TextButton[type="button"] {
+  font-family: Nunito;
+  font-style: normal;
+  font-weight: regular;
+  font-size: 14px;
+  line-height: 22px;
+  display: flex;
+  align-items: center;
+  color: #006aa3;
+  flex: none;
+  padding-top: 0.5%;
+  padding-left: 2%;
+}
