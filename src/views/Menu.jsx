@@ -18,7 +18,7 @@ export default function Login() {
     <div>
       <HeadIcon />
       <Card titulo="Menu" onclick>
-        <Row>
+        <Row width="50%">
           <BigButton titulo="Adicionar Paciente">
             <svg
               class="rectangle"
