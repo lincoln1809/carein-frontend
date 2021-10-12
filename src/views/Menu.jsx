@@ -30,7 +30,7 @@ export default function Login() {
               />
             </svg>
           </BigButton>
-          <BigButton titulo="Procura usuário">
+          <BigButton titulo="Procura paciente">
             <svg
               class="square"
               width="120px"
