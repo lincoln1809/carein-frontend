@@ -45,13 +45,13 @@ export default function Login() {
           <Column>
             <Input
               label="Usuário"
-              placeholder="Insira seu nome de usuário"
+              // placeholder="Insira seu nome de usuário"
               helpText=""
               type="text"
             />
             <Input
               label="Senha"
-              placeholder="Insira sua senha"
+              // placeholder="Insira sua senha"
               helpText=""
               type="password"
             />

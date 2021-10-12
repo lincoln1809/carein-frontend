@@ -68,7 +68,8 @@
 }
 input[type="text"],
 input[type="number"],
-input[type="datetime-local"] {
+input[type="datetime-local"],
+input[type="password"] {
   padding: 10px 10px 8px 10px;
   font-family: Nunito;
   font-style: normal;
