@@ -15,7 +15,7 @@ export default function Login() {
       <HeadIcon />
       <Card titulo="Menu" onclick>
         <Row width="50%">
-          <BigButton link="adicionarPaciente" titulo="Adicionar Paciente">
+          <BigButton link="/adicionarPaciente" titulo="Adicionar Paciente">
             <svg
               class="rectangle"
               width="120px"
