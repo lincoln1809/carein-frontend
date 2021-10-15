@@ -55,7 +55,7 @@ export default function Login() {
               helpText=""
               type="password"
             />
-            <Button buttonName="Entrar" />
+            <Button buttonName="Entrar" link="/adicionarPaciente" />
           </Column>
         </Row>
       </Card>
