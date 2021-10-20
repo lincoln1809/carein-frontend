@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import "./style.css";
+import "../components/Button/Button.css";
 import Card from "../components/Card/Card";
 import HeadIcon from "../components/HeadIcon/HeadIcon";
 import Row from "../components/Row/Row";
@@ -16,17 +17,48 @@ import TextButton from "../components/TextButton/TextButton";
 export default function NovoPaciente() {
   const [pacientName, setPacientName] = useState("-");
   const [age, setAge] = useState("-");
-  const [CPF, setCPF] = useState("-");
+  const [cpf, setCpf] = useState("-");
   const [entryTime, setEntryTime] = useState("-");
   const [visitReason, setVisitReason] = useState("-");
   const [physicalDisability, setPhysicalDisability] = useState("-");
   const [medicine, setMedicine] = useState("-");
   const [companionName, setCompanionName] = useState("-");
   const [companionAge, setCompanionAge] = useState("-");
-  const [companionCPF, setCompanionCPF] = useState("-");
+  const [companionCpf, setCompanionCpf] = useState("-");
+
+  function getValuePacientName(value) {
+    setPacientName(value);
+  }
+  function getValueAge(value) {
+    setAge(value);
+  }
+  function getValueCpf(value) {
+    setCpf(value);
+  }
+  function getValueEntryTime(value) {
+    setEntryTime(value);
+  }
+  function getValueVisitReason(value) {
+    setVisitReason(value);
+  }
+  function getValuePhysicalDisability(value) {
+    setPhysicalDisability(value);
+  }
+  function getValueMedicine(value) {
+    setMedicine(value);
+  }
+  function getValueCompanionName(value) {
+    setCompanionName(value);
+  }
+  function getValueCompanionAge(value) {
+    setCompanionAge(value);
+  }
+  function getValueCompanionCpf(value) {
+    setCompanionCpf(value);
+  }
 
   return (
-    <div class="alfa">
+    <div className="alfa">
       <HeadIcon />
       <Card titulo="Adicionar Paciente">
         <Row>
@@ -36,47 +68,37 @@ export default function NovoPaciente() {
             <Input
               label="Nome Completo"
               type="text"
-              value={pacientName}
-              onChange={(e) => setPacientName()}
+              getValue={getValuePacientName}
             />
+            <div>{pacientName}</div>
             <Row>
               <Input
                 label="Idade"
                 width="25%"
                 type="text"
-                value={age}
-                onChange={(e) => setAge()}
+                getValue={getValueAge}
               />
-              <Input
-                label="CPF"
-                type="text"
-                value={CPF}
-                onChange={(e) => setCPF()}
-              />
+              <Input label="CPF" type="text" getValue={getValueCpf} />
             </Row>
             <Input
               label="Horário de entrada"
               type="datetime-local"
-              value={entryTime}
-              onChange={(e) => setEntryTime()}
+              getValue={getValueEntryTime}
             />
             <Input
               label="Motivo da visita"
               type="text"
-              value={visitReason}
-              onChange={(e) => setVisitReason()}
+              getValue={getValueVisitReason}
             />
             <Input
               label="Portador de alguma deficiência física?"
               type="text"
-              value={physicalDisability}
-              onChange={(e) => setPhysicalDisability()}
+              getValue={getValuePhysicalDisability}
             />
             <Input
               label="Toma algum remédio?"
               type="text"
-              value={medicine}
-              onChange={(e) => setMedicine()}
+              getValue={getValueMedicine}
             />
           </Column>
           <Line></Line>
@@ -88,30 +110,23 @@ export default function NovoPaciente() {
             <Input
               label="Nome Completo"
               type="text"
-              value={companionName}
-              onChange={(e) => setCompanionName()}
+              getValue={getValueCompanionName}
             />
             <Row>
               <Input
                 label="Idade"
                 width="25%"
                 type="text"
-                value={companionAge}
-                onChange={(e) => setCompanionAge()}
+                getValue={getValueCompanionAge}
               />
-              <Input
-                label="CPF"
-                type="text"
-                value={companionCPF}
-                onChange={(e) => setCompanionCPF()}
-              />
+              <Input label="CPF" type="text" getValue={getValueCompanionCpf} />
             </Row>
             <Row>
               <TextButton
                 link="/menu"
                 textButtonName="Cancelar e retornar ao menu"
               />
-              <Button buttonName="Concluir Cadastro" link="/menu" />
+              <button className="Button">Concluir Cadastro</button>
             </Row>
           </Column>
         </Row>
