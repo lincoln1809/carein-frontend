@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import "./style.css";
 import Card from "../components/Card/Card";
 import HeadIcon from "../components/HeadIcon/HeadIcon";
@@ -13,6 +13,14 @@ import Button from "../components/Button/Button";
 // } from 'react-router-dom';
 
 export default function Login() {
+  const [user, setUser] = useState("-");
+  function getInfoUser(user) {
+    setUser(user);
+  }
+  const [password, setPassword] = useState("-");
+  function getInfoPassword(password) {
+    setPassword(password);
+  }
   return (
     <div>
       <HeadIcon />
@@ -48,12 +56,14 @@ export default function Login() {
               // placeholder="Insira seu nome de usuário"
               helpText=""
               type="text"
+              getValue={getInfoUser}
             />
             <Input
               label="Senha"
               // placeholder="Insira sua senha"
               helpText=""
               type="password"
+              getValue={getInfoPassword}
             />
             <Button buttonName="Entrar" link="/adicionarPaciente" />
           </Column>
